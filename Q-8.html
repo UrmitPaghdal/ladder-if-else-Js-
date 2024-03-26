@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 9.1</title>
+</head>
+
+<body>
+        
+    <script>
+        var hour = (parseInt(prompt("Enter hour : ")));
+        var minute = (parseInt(prompt("Enter minute : ")));
+        var ampm = prompt("Enter am or pm : ");
+
+        document.write("Time = " + hour + ":" + minute + " " + ampm + "<br>");
+
+        if (hour >= 5 && hour <= 11 && minute >= 0 && minute <= 59 && ampm == "am") {
+            document.write("Good morning.");
+        }
+        else if (hour >= 12 && hour <= 5 && minute >= 0 && minute <= 59 && ampm == "pm") {
+            document.write("Good afternoon.");
+        }
+        else if (hour >= 6 && hour <= 9 && minute >= 0 && minute <= 59 && ampm == "pm") {
+            document.write("Good evening.");
+        }
+    </script>
+    
+</body>
+</html>
